@@ -3,6 +3,9 @@
 */
 DEFINE("_PFAD", "../includes");
 
+// Config
+require_once("config.inc.php");
+
 //Klassenincludes
 //require_once("klassen/allianz.php");
 //require_once("klassen/einheit.php");
