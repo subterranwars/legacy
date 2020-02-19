@@ -132,10 +132,10 @@ if( $config->getStatus() == "online" )
 		        }
 		        
 		        //Dem User seine Bevölkerungsdaten setzen
-		        $db->query("INSERT INTO t_bevoelkerung VALUES ('', ".$bev['Bevölkerung'].", ".$bev['Wachstumsrate'].", ".time().", ".$result['ID_User'].", ".$ID_Kolonie.")");
+		        $db->query("INSERT INTO t_bevoelkerung VALUES (0, ".$bev['Bevölkerung'].", ".$bev['Wachstumsrate'].", ".time().", ".$result['ID_User'].", ".$ID_Kolonie.")");
 		        
 		        //Generaldaten setzen
-		        $db->query("INSERT INTO t_general VALUES ('', 0,0,0,0,0,0,0,$admiral_skillpoints)");
+		        $db->query("INSERT INTO t_general VALUES (0, 0,0,0,0,0,0,0,$admiral_skillpoints)");
 		        $db->query("UPDATE t_user SET ID_General = ".$db->last_insert()." WHERE ID_User = ".$result['ID_User']."");
 		        
 		        //Status des Spielers aktuallisieren

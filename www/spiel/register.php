@@ -134,7 +134,7 @@ if( $config->getNewRegistration() == 'ja' AND $config->getStatus() == 'online' )
                			$activation_key = $config->getActivationKey();
                			
                			//FreischaltCode in Db schreiben
-               			$sql = "INSERT INTO t_userfreischalten ( ID_Key, Freischaltungscode, ID_User ) VALUES ( '', '".$activation_key."', $ID_User );";
+               			$sql = "INSERT INTO t_userfreischalten (Freischaltungscode, ID_User ) VALUES ('".$activation_key."', $ID_User );";
 		                $db->query($sql);
 		                $ID_Key = $db->last_insert();
 		                
