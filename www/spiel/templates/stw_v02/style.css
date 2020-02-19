@@ -1,0 +1,110 @@
+body, table, a
+{
+	font-family: 	Arial;
+	font-size: 		9pt;
+	color:			#FFFFFF;
+	scrollbar-DarkShadow-Color: #000000;  
+	scrollbar-Track-Color: 		#434C5D;  
+	scrollbar-Face-Color: 		#0F254D;  
+	scrollbar-Shadow-Color: 	#000000;  
+	scrollbar-Highlight-Color: 	#ffffff;  
+	scrollbar-3dLight-Color: 	#0F254D;  
+	scrollbar-Arrow-Color: 		#ffffff;  
+}
+
+a:link, a:visited, a:active
+{
+	background-color: transparent;  	
+}
+
+a:hover
+{
+	color: #C50000;  
+   	text-decoration: underline; 
+}
+
+img
+{
+	border-width: 0pt;
+}
+
+.error
+{
+	background: #600101;
+}
+
+.green
+{
+	color: green;
+}
+
+.orange
+{
+	color: orange;
+}
+
+.red
+{
+	color: red;
+}
+
+.beschreibung
+{
+	font-size: 8pt;
+}
+
+.rohstoffe
+{	line-height: 	7pt;
+	font-family: 	Verdana;
+	font-size: 		7pt;
+}
+
+.irc
+{
+	font-size: 8pt;
+	color: black;
+	background: white;
+	font-weight: bold;
+}
+
+.msg_new
+{
+	font-weight: bold;
+}
+
+.ereignis_new
+{
+	color: orange;
+}
+
+th
+{
+	background: #8E8E8E;
+}
+
+.avatar
+{
+	border-style: solid;
+	border-width: 1pt;
+	border-color: #000000;
+}
+
+.blue
+{
+	text-align: left;
+	color: blue;
+}
+
+.yellow
+{
+	color: yellow;
+}
+
+table.overview
+{
+	color: white;
+	border-color:	white; 
+	border-style:	dashed; 
+	border-width: 	1pt;
+	width: 100%;
+}

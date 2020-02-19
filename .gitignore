@@ -1,0 +1,4 @@
+*.iml
+.idea
+www/spiel/cache/avatar
+www/spiel/cache/logs

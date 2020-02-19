@@ -1,0 +1,84 @@
+body, table, a
+{
+	background: 	#0F1B31;
+	font-family: 	Arial;
+	font-size: 		10pt;
+	color:			#FFFFFF;
+}
+
+a:link, a:visited, a:active
+{
+	background-color: transparent;  	
+}
+
+a:hover
+{
+	color: #C50000;  
+   	text-decoration: underline; 
+}
+
+.error
+{
+	background: #600101;
+}
+
+.green
+{
+	color: green;
+}
+
+.orange
+{
+	color: orange;
+}
+
+.red
+{
+	color: red;
+}
+
+.beschreibung
+{
+	font-size: 8pt;
+}
+
+.rohstoffe
+{
+	font-size: 8pt;
+}
+
+.irc
+{
+	font-size: 8pt;
+	color: black;
+	background: white;
+	font-weight: bold;
+}
+
+.msg_new
+{
+	font-weight: bold;
+}
+
+th
+{
+	background: #8E8E8E;
+}
+
+img
+{
+	border-style: solid;
+	border-width: 1pt;
+	border-color: #000000;
+}
+
+.blue
+{
+	text-align: left;
+	color: blue;
+}
+
+.yellow
+{
+	color: yellow;
+}

@@ -1,0 +1,46 @@
+table, a
+{
+	font-family: 	Arial;
+	font-size: 		10pt;
+	color:			#FFFFFF;
+}
+
+a:link, a:visited, a:active
+{
+	background-color: transparent;  	
+}
+
+a:hover
+{
+	color: #C50000;  
+   	text-decoration: underline; 
+}
+
+th
+{
+	background: #8E8E8E;
+}
+
+img
+{
+	border-width: 0pt;
+}
+
+.beschreibung
+{
+	font_size: 8pt;
+}
+
+.error
+{
+	background: #600101;
+}
+
+.green
+{
+	color: green;
+}
+.beschreibung
+{
+	font-size: 8pt;
+}

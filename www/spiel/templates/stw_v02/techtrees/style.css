@@ -1,0 +1,29 @@
+a, div, body, table
+{
+	font-family: 		verdana;
+	font-size: 			10px;
+	color: 				white;
+	text-decoration:	none;
+	scrollbar-DarkShadow-Color: #000000;  
+	scrollbar-Track-Color: 		#434C5D;  
+	scrollbar-Face-Color: 		#0F254D;  
+	scrollbar-Shadow-Color: 	#000000;  
+	scrollbar-Highlight-Color: 	#ffffff;  
+	scrollbar-3dLight-Color: 	#0F254D;  
+	scrollbar-Arrow-Color: 		#ffffff;  
+}
+
+.green
+{
+	color: green;	
+}
+
+.red
+{
+	color: red;
+}
+
+.error
+{
+	background: #600101;
+}

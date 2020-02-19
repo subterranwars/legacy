@@ -1,0 +1,531 @@
+<html>
+<head>
+<title>Kampfbericht</title>
+<style type="text/css">
+	body, table
+	{
+		font-family: 		Verdana;
+		font-size: 			8pt;
+		color:				#FFFFFF;
+	}
+	
+	table.content
+	{
+		border-color:		#0F254D; 
+		border-style:		solid; 
+		border-width: 		1pt;
+	}
+	
+	table.rohstoffe
+	{
+		font-size: 		7pt;
+	}
+	
+	a:link, a:visited, a:active
+	{
+		color: 				#C50000;
+		background-color: 	transparent;  	
+	}
+	
+	a:hover
+	{
+		color: orange;  
+	   	text-decoration: 	underline; 
+	}
+	
+	th
+	{
+		background-color: 	#0F254D;
+	}
+	
+	table.user_info
+	{
+		font-size: 			8pt;
+		font-family: 		Verdana;
+		color: 				red;
+		border-width:		1pt;
+		border-color:		white;
+		border-style:		dashed;	
+		width:				100%;
+	}
+	
+	table.user_info2
+	{
+		font-size: 			8pt;
+		font-family: 		Verdana;
+		color: 				green;
+		border-width:		1pt;
+		border-color:		white;
+		border-style:		dashed;	
+		width:				100%;
+	}
+	
+	img.user_info
+	{
+		border: 			1pt;
+		border-color: 		black;
+	}
+</style>
+<script language="JavaScript">
+	var visible = true;
+
+	function changeVisibility(name)
+	{
+		if(visible == true)
+		{
+			document.getElementById(name).style.display="block";
+			visible = false;
+		}
+		else
+		{
+			document.getElementById(name).style.display="none";
+			visible = true;
+		}
+	}
+</script>
+</head>
+<body background="templates/stw_v02/kampfbericht/bg.gif">
+%DATUM%
+<center>
+	<table class="content" width=700 border=0>
+		<tr>
+			<th colspan=5>Kampfbericht</th>
+		</tr>
+		<tr>
+			<td align=center width=300 colspan=2>
+				<table class="user_info2">
+					<tr>
+						<td colspan=2 align="center"><i>Angreifer:</i></td>
+					</tr>
+					<tr>
+						<td colspan=2><img src="cache/avatar/374.jpg"></td>
+					</tr>
+					<tr>
+						<td><b>Nickname:</b></td>
+						<td>Marskuh</td>
+					</tr>	
+					<tr>
+						<td><b>Rasse:</b></td>
+						<td>Terraner</td>
+					</tr>
+					<tr>
+						<td><b>Punkte:</b></td>
+						<td>100</td>
+					</tr>
+					<tr>
+						<td><b>Kolonie:</b></td>
+						<td>Q's Spielwiese (1:1:1)</td>
+					</tr>
+				</table>
+			</td>
+			<td align=center width=100>
+				<b>VS.</b>
+			</td>
+			<td align=center width=300 colspan=2>
+				<table class="user_info">
+					<tr>
+						<td align="center" colspan=2><i>Verteidiger:</i></td>
+					</tr>
+					<tr>
+						<td colspan=2><img src="cache/avatar/374.jpg"></td>
+					</tr>
+					<tr>
+						<td><b>Nickname:</b></td>
+						<td>Fafner</td>
+					</tr>	
+					<tr>
+						<td><b>Rasse:</b></td>
+						<td>SubTerraner</td>
+					</tr>
+					<tr>
+						<td><b>Punkte:</b></td>
+						<td>900</td>
+					</tr>
+					<tr>
+						<td><b>Kolonie:</b></td>
+						<td>Fafner's Home (3:3:-5)</td>
+					</tr>
+				</table>
+			</td>
+		</tr>	
+		<tr>
+			<th colspan=5><i>Gewinner: 3:3:1</i></th>
+		</tr>	
+		<tr>
+			<td colspan=5 height=5></td>
+		</tr>
+		<tr>
+			<td width=250><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="150"></td>
+			<td width=50>10</td>
+			<th>Gesamt:</th>
+			<td width=250><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="150"></td>
+			<td width=50>10</td>
+		</tr>
+		<tr>
+			<td colspan=5 height=5></td>
+		</tr>
+		<!-- Infanteristen -->
+		<!-- Gesamt -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="150"></td>
+			<td>10</td>
+			<th rowspan=3>Infanteristen</th>
+			<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="150"></td>
+			<td>10</td>
+		</tr>
+		<!-- Verluste -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/lost.gif" height="15" width="75"></td>
+			<td>5</td>
+			<td><img src="templates/stw_v02/kampfbericht/lost.gif" height="15" width="75"></td>
+			<td>5</td>
+		</tr>
+		<!-- Verbleibend -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/left.gif" height="15" width="75"></td>
+			<td>5</td>
+			<td><img src="templates/stw_v02/kampfbericht/left.gif" height="15" width="75"></td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td colspan=5 height=5></td>
+		</tr>		
+		<!-- Fahrzeuge -->
+		<!-- Gesamt -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="0"></td>
+			<td>0</td>
+			<th rowspan=3>Fahrzeuge</th>
+			<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="0"></td>
+			<td>0</td>
+		</tr>
+		<!-- Verluste -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/lost.gif" height="15" width="0"></td>
+			<td>0</td>
+			<td><img src="templates/stw_v02/kampfbericht/lost.gif" height="15" width="0"></td>
+			<td>0</td>
+		</tr>
+		<!-- Verbleibend -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/left.gif" height="15" width="0"></td>
+			<td>0</td>
+			<td><img src="templates/stw_v02/kampfbericht/left.gif" height="15" width="0"></td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td colspan=5 height=5></td>
+		</tr>
+		<!-- Mechs -->
+		<!-- Gesamt -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="0"></td>
+			<td>0</td>
+			<th rowspan=3>Mechs</th>
+			<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" height="15" width="0"></td>
+			<td>0</td>
+		</tr>
+		<!-- Verluste -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/lost.gif" height="15" width="0"></td>
+			<td>0</td>
+			<td><img src="templates/stw_v02/kampfbericht/lost.gif" height="15" width="0"></td>
+			<td>0</td>
+		</tr>
+		<!-- Verbleibend -->
+		<tr>
+			<td><img src="templates/stw_v02/kampfbericht/left.gif" height="15" width="0"></td>
+			<td>0</td>
+			<td><img src="templates/stw_v02/kampfbericht/left.gif" height="15" width="0"></td>
+			<td>0</td>
+		</tr>
+		<!-- Legende -->
+		<tr>
+			<td align=center colspan=5>
+				<table class="rohstoffe">
+					<tr>
+						<th colspan=9>Legende:</th>
+					</tr>
+					<tr>
+						<td><img src="templates/stw_v02/kampfbericht/gesamt.gif" width=15 height=8></td>
+						<td>Anzahl gesamt</td>
+						<td width=10></td>
+						<td><img src="templates/stw_v02/kampfbericht/lost.gif" width=15 height=8></td>
+						<td>Anzahl zerstört</td>
+						<td width=10></td>
+						<td><img src="templates/stw_v02/kampfbericht/left.gif" width=15 height=8></td>
+						<td>Anzahl verbleibend</td>
+						<td width=10></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<th colspan="5">
+				<a href="#" onClick="changeVisibility(1)">Kampfdetails anzeigen</a>
+			</th>
+		</tr>
+		<tr>
+			<td align=center valign=top colspan=2>
+				<table class="rohstoffe">
+					<tr>
+						<th colspan=5>geplünderte Rohstoffe</th>
+					</tr>
+					<tr>
+						<th>Eisen:</th>
+						<td>0</td>
+						<td></td>
+						<th>Stein:</th>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th>Nahrung:</th>
+						<td>1500</td>
+						<td></td>
+						<th>Öl:</th>
+						<td>3750</td>
+					</tr>
+					<tr>
+						<th>Kunststoff:</th>
+						<td>528</td>
+						<td></td>
+						<th>Stahl:</th>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th>Titanerz:</th>
+						<td>0</td>
+						<td></td>
+						<th>Titan:</th>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th>Wasser:</th>
+						<td>0</td>
+						<td></td>
+						<th>Wasserstoff:</th>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th>Uran:</th>
+						<td>0</td>
+						<td></td>
+						<th>Plutonium:</th>
+						<td>0</td>
+					</tr>
+					<tr>
+						<th>Diamant:</th>
+						<td>0</td>
+						<td></td>
+						<th>Gold:</th>
+						<td>0</td>
+					</tr>
+				</table>
+			</td>
+			<td valign=top align=center colspan="3">
+				<div id=1 style="display:none">
+					<table class=rohstoffe>
+						<tr>
+							<td></td>
+							<th colspan=2>Infanterist:</th>
+							<th colspan=2>Fahrzeuge:</th>
+							<th colspan=2>Mechs:</th>
+						</tr>
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>
+<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+						<tr>
+							<th>Kleine süße Soldätchens :D (10)</th>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ_W%">100</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ1_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%A_ANZ2_W%">0</td>
+							<td><img src="templates/stw_v02/kampfbericht/balken2.gif" height="15" width="%V_ANZ2_W%">0</td>					
+						</tr>	
+					</table>
+					<br>
+				</div>
+			</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>
