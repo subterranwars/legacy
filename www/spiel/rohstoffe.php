@@ -92,16 +92,6 @@ for( $i=1; $i<=count($res_array); $i++ )
 	//Rohstoffobjekt erzeugen
 	$res->loadRohstoff($i);
 		
-	//Ausgabe hübsch machen
-	if( $produktion[$i] == 0 )
-	{
-		$produktion[$i] = "";
-	}
-	if( $verbrauch[$i] == 0 )
-	{
-		$verbrauch[$i] = "";
-	}	
-	
 	//Templatedaten setzen
 	$daten_rohstoffe['NAME'] = $res->getBezeichnung();
 	$daten_rohstoffe['PRODUKTION'] 	= number_format(floor($produktion[$i]), 0, ",",".");

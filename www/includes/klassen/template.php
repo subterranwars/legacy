@@ -53,7 +53,7 @@ class template
 				
 				//Debugmeldung
 				$this->debug("Teilstring \$anfang, \$ende: ".$tpl_anfang.",".$tpl_ende."");
-				$this->debug("Objektname '$tpl_name' erzeugt: <br>".$this->obj[$tpl_name]."<br>".htmlspecialchars($this->obj[$tpl_name]["schablone"]));
+				$this->debug("Objektname '$tpl_name' erzeugt: <br>".$this->obj[$tpl_name]."<br>".htmlspecialchars($this->obj[$tpl_name]));
 				
 				//Template löschen
 				$this->template	 = substr($this->template, 0, $anfang)."{".$tpl_name."}".substr($this->template, $ende);
