@@ -1,6 +1,6 @@
 # Subterranwars - Legacy Edition
 
-Subterranwars ist ein Browserbasiertes-Spiel  - welches um das Jahr 2000 in PHP realsiert wurde.
+Subterranwars ist ein Browserbasiertes-Spiel  - welches um das Jahr 2004 in PHP realsiert wurde.
 
 Dieses Repository dient dazu, die damalige Arbeit zu archivieren.
 
