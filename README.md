@@ -1,3 +1,9 @@
+# Disclaimer
+
+The code is here for archival purposes only.
+
+**DO NOT RUN THIS IN PRODUCTION. IT IS NOT SAFE.**
+
 # Subterranwars - Legacy Edition
 
 Subterranwars ist ein Browserbasiertes-Spiel  - welches um das Jahr 2004 in PHP realsiert wurde.
