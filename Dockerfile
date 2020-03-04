@@ -20,10 +20,3 @@ RUN echo "AuthPass=pwd" >> /etc/ssmtp/ssmtp.conf
 
 # Set up php sendmail config
 RUN echo "sendmail_path=sendmail -i -t" >> /usr/local/etc/php/conf.d/php-sendmail.ini
-
-# Set up highscore update cron
-ADD crontab /etc/cron.d/highscore-cron
-RUN chmod 0644 /etc/cron.d/highscore-cron
-RUN touch /var/log/cron.log
-RUN apt-get update -y && apt-get install -y cron
-CMD cron && tail -f /var/log/cron.log
