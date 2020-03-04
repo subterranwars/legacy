@@ -15,19 +15,15 @@ class DATENBANK
 {
 	//Objektvariablen
 	private:
-		char szHostname[50];
-		char szPasswort[50];
-		char szUser[50];
-		char szDatenbank[50];
 		int iShowErrors;
-		MYSQL *dbHandle;
+		MYSQL dbHandle;
 	public:
 		MYSQL_RES *dbResult;
 		
 	//MEthoden
 	public:
 		/*Standardkonstruktor*/
-		DATENBANK();	
+		DATENBANK(const char *psHost, int port, const char *psUser, const char *psPasswort, const char *psDatenbank);
 		
 		/*Dekonstruktor*/
 		~DATENBANK();

@@ -14,7 +14,13 @@ int main(int argc, char* args[]);
 
 /*Main-Funktion
  * szArgs[0] = Scriptname
- * szArgs[1] = MissionsID*/
+ * szArgs[1] = db host
+ * szArgs[2] = db port
+ * szArgs[3] = db user
+ * szArgs[4] = db password
+ * szArgs[5] = db name
+ * szArgs[6] = MissionsID
+ * */
 int main(int iArgc, char* szArgs[])
 {
 	//Deklarationen
@@ -69,13 +75,13 @@ int main(int iArgc, char* szArgs[])
 	KAMPF *pKampf;					//Zeiger für kampfobjekt :)
 	
 	//Übergabeparameter überprüfen
-	if( iArgc == 2  )
+	if( iArgc == 7 )
 	{
 		//DAtenbankobjekt erzeugen
-		pDB = new DATENBANK();
+		pDB = new DATENBANK(szArgs[1], atoi(szArgs[2]), szArgs[3], szArgs[4], szArgs[5]);
 		
 		//Lade mission
-		sprintf(szQuery, "SELECT ID_Mission, Parameter, ID_Flotte, ID_KoordinatenDestination, ID_User, ID_UserOpfer, Ressources, ID_KoordinatenSource, Hinflug FROM t_mission WHERE ID_Mission = %d", atoi(szArgs[1]));
+		sprintf(szQuery, "SELECT ID_Mission, Parameter, ID_Flotte, ID_KoordinatenDestination, ID_User, ID_UserOpfer, Ressources, ID_KoordinatenSource, Hinflug FROM t_mission WHERE ID_Mission = %d", atoi(szArgs[6]));
 		pDB->query(szQuery);
 		dbRow = mysql_fetch_row(pDB->dbResult);
 		
@@ -98,7 +104,7 @@ int main(int iArgc, char* szArgs[])
 		if( 0 == strcmp( dbRow[1], "Angriff") )
 		{
 			//2. Datenbankobjekt einleiten
-			pDB2 = new DATENBANK();
+			pDB2 = new DATENBANK(szArgs[1], atoi(szArgs[2]), szArgs[3], szArgs[4], szArgs[5]);
 			
 			//Lade Angreiferanzahl
 			sprintf(szQuery, "SELECT COUNT(*) FROM t_einheit, t_profil WHERE ID_Flotte = %d AND t_einheit.ID_Bauplan = t_profil.ID_Profil AND t_profil.ChassisTyp <= 3", atoi(dbRow[2]));

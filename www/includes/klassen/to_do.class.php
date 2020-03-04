@@ -610,7 +610,13 @@ class TO_DO
 						$to_do->durchlaufe_ereignisse($row['Hinflug']-1);
 					}
 					//Kampf ausführen
-					exec("../cpp/finish_mission ".$row['ID_Mission']."");
+					// 1 db host
+					// 2 db port
+					// 3 db user
+					// 4 db password
+					// 5 db name
+					// 6 missions id
+					exec("../cpp/finish_mission db 3306 stw stw stw ".$row['ID_Mission']."");
 	                break;
 	            case 'Rückflug':
 	            	//Missionsdaten laden
