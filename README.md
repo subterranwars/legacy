@@ -22,3 +22,7 @@ Hier kann jeder Emaildienst verwendet werden, welcher smtp unterstützt, wie z.B
 
 --> `Dockerfile`
 
+## Bekannte Fehler
+ - SQL Injektion überall
+ - Kämpfen geht nicht -> kampfscript nicht mehr compilierbar (wird kein Aufwand hineingesteckt)
+ - Wenn Kämpfe stattfinden sollen, verringert sich bei allen Beteiligten die Bevölkerung
