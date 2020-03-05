@@ -15,7 +15,7 @@ DATENBANK::DATENBANK(const char *psHost, int port, const char *psUser, const cha
 
 	//Datenbankverbindung herstellen
 	mysql_init(&this->dbHandle);
-	if (!mysql_real_connect(&this->dbHandle, psHost, psUser, psPasswort, psDatenbank,3307,NULL,0))
+	if (!mysql_real_connect(&this->dbHandle, psHost, psUser, psPasswort, psDatenbank,port,NULL,0))
 	{
 		this->debug("Konnte Datenbankverbindung nicht herstellen");
 	}
