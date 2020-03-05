@@ -21,6 +21,17 @@ RUN echo "AuthPass=pwd" >> /etc/ssmtp/ssmtp.conf
 # Set up php sendmail config
 RUN echo "sendmail_path=sendmail -i -t" >> /usr/local/etc/php/conf.d/php-sendmail.ini
 
+# Install g++ and mysql connector
+RUN apt-get update -y && apt-get install -y g++
+RUN apt-get update -y && apt-get install -y libmysql++-dev
+
+COPY ./kampfscript /opt/kampfscript
+RUN rm -f /opt/kampfscript/Debug/*.o \
+        && rm -f /opt/kampfscript/Debug/*.d \
+        && rm -f /opt/kampfscript/Debug/kampfscript_v02 \
+        && cd /opt/kampfscript/Debug \
+        && make
+
 # Set up highscore update cron
 ADD crontab /etc/cron.d/highscore-cron
 RUN chmod 0644 /etc/cron.d/highscore-cron

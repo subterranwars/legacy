@@ -24,7 +24,7 @@ int main(int argc, char* args[]);
 int main(int iArgc, char* szArgs[])
 {
 	//Deklarationen
-	int iError 				= 0;	//Rückgabevariabel <= 0 => fehler
+	int iError 				= 0;	//Rückgabevariabel > 0 => fehler
 	int iI 					= 0;	//Zählvariabel
 	int iA					= 0;	//Zählvariabel
 	int iReturn 			= 0;	//Wird für z.b. das Kampfscript benötigt
@@ -631,7 +631,7 @@ int main(int iArgc, char* szArgs[])
 	}
 	else	//Zu wenig Übergabeparameter
 	{
-		iError = -1;
+		iError = 1;
 	}
 		
 	//Rückgabewert

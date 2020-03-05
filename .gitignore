@@ -2,4 +2,6 @@
 .idea
 www/spiel/cache/avatar
 www/spiel/cache/logs
-kampfscript/Debug
+kampfscript/Debug/*.o
+kampfscript/Debug/*.d
+kampfscript/Debug/kamfscript_v02
